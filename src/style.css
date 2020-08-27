@@ -1,0 +1,617 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.logo{
+  text-align: center;
+  font-family: Roboto;
+}
+.containerbtn{
+  
+flex-direction: row;
+padding: 10px 20px;
+
+position: absolute;
+width: 188px;
+height: 76px;
+left: 626px;
+top: 438px;
+
+background: #1EBFC9;
+border-radius: 17px;
+}
+.textosbtns{
+  
+  position: static;
+  width: 148px;
+  height: 56px;
+  left: 20px;
+  top: 10px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+ 
+  align-items: center;
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  align-self: center;
+  
+}
+.btnlogin{
+  /* btnIngreso */
+/* Auto Layout */
+width: 215px;
+height: 76px;
+
+margin-top: 20px;
+background: #1EBFC9;
+border-radius: 17px;
+font-family: Roboto;
+font-size: 42px;
+text-decoration: none;
+line-height: 56px;
+align-items: center;
+
+color: #FFFFFF;
+justify-content: center;
+text-align: center;
+}
+.textlogin{
+  position: static;
+width: 175px;
+height: 56px;
+left: 20px;
+top: 10px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 10px 0px;
+}
+.queso{
+border: 1px solid #909090;
+box-sizing: border-box;
+border-radius: 10px;
+height: 50px;
+width: 300px;
+font-size: 20px;
+padding-left: 50px;
+margin-top: 12.5px;
+}
+.textologinok{
+  
+  
+  /* Ingresar */
+
+
+position: static;
+width: 175px;
+height: 56px;
+left: 20px;
+top: 10px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 10px 0px;
+}
+.laviymeolvide{
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14.5px;
+
+
+
+color: #000000;
+}
+.xdrow{
+  margin-top: 5px;
+flex-direction: row;
+}
+.cajitafeliz{
+  width: 600px;
+height: 652px;  
+border-radius: 10;
+background-color: #FFFFFF;
+text-align: center;
+justify-content: center;
+align-items: center;
+align-self: center;
+margin-left: 27.5%;
+margin-top: 20px;
+padding:15px;
+border-radius: 17px;
+}
+.contenedorgigante{
+  justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+flex-wrap: wrap;
+background-image:url("./FondoTufast.png");
+
+background-size: cover;
+}
+.header{
+  width:100%;
+  height: 70px;
+  background: #1EBFC9;
+}
+.formcontainer{
+  margin-top: 40px;
+}
+.cualquier{
+  height: 50px;
+}
+.titulo{
+
+  width: 147px;
+  height: 56px;
+  
+color: #000000;
+
+font-family: Roboto;
+font-size: 48px;
+
+}
+.cajitafeliz2{
+  width: 600px;
+height: 695px;
+background: #FFFFFF;
+  text-align: center;
+justify-content: center;
+align-items: center;
+align-self: center;
+margin-left: 27.5%;
+
+padding:15px;
+border-radius: 17px;
+margin-top: 15px;
+}
+.xdrow2{
+  margin-top: 20px;
+flex-direction: row;
+}
+.cajitafeliz3{
+  width: 600px;
+height: 652px;
+padding:15px;
+border-radius: 17px;
+margin-top: 15px;
+background: #FFFFFF;
+
+
+}
+.xdcolumna{
+  flex-direction: column;
+  margin-left: 29px;
+}
+.btninicio{
+
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  
+  position: absolute;
+  width: 149px;
+  height: 48px;
+  left: 1099px;
+  top: 21px;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #1EBFC9;
+  border: 3px solid #FFFFFF;
+  border-radius: 17px;
+  top:1.5%
+}
+.btninicio2{
+
+/* btnIngreso */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+padding: 10px 20px;
+color:white;
+text-decoration: none;
+text-align: center;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 128px;
+height: 48px;
+left: 1277px;
+top: 21px;
+top:1.5%;
+background: #1EBFC9;
+border: 3px solid #FFFFFF;
+border-radius: 17px;
+}
+.textoinicio{
+
+position: static;
+width: 109px;
+height: 28px;
+left: 20px;
+top: 10px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 10px 0px;
+
+}
+
+.lacajadelosturnos{
+  position: absolute;
+width: 1376px;
+height: 549px;
+left: 32px;
+top: 230px;
+
+
+background: #EAEAEA;
+border-radius: 25px 25px 0px 0px;
+}
+.cajagorda{
+  position: absolute;
+width: 1376px;
+height: 120px;
+left: 32px;
+top: 90px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 25px;
+}
+.cajaverde{
+
+width: 650px;
+height: 390px;
+margin-left:2.2%;
+margin-top:3.2%;
+
+background: #25A68F;
+border-radius: 25px 0px 25px 25px;
+padding-top: 1%;
+
+}
+.cajaverde2{
+
+  width: 650px;
+height: 390px;
+
+margin-left:51%;
+margin-top:3.2%;
+background: #25A68F;
+border-radius: 0px 25px 25px 25px;
+}
+.textolugar{
+
+
+  margin-left: 2%;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+.botonsacar1{
+  /*margin-left: 5%;
+  margin-top:3%;
+width: 256px;
+height: 52px;
+left: 93px;
+top: 440px;
+
+background: #81BFF9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 45px;
+text-align: center;
+  justify-content: center;
+  align-items: center; */
+  
+background: #81BFF9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 45px;
+width: 256px;
+height: 52px;
+margin-left: 3%;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+padding-top: 1.5%;
+align-items: center;
+text-align: center;
+color: #000000;
+
+}
+.botonsacar2{
+/* Rectangle 14 */
+
+
+background: #81BFF9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 45px;
+width: 256px;
+height: 52px;
+margin-left: 57%;
+font-family: Roboto;
+margin-top: 2%;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+padding-top: 1.5%;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.peluca{
+  
+
+width: 173px;
+height: 42px;
+left: 515px;
+top: 419px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+
+
+color: #000000;
+
+}
+.imagentelefono{
+  position: absolute;
+  right:0;
+  bottom:0;
+  height: 40%;
+  
+
+}
+.DIBUJO2{
+  left:0;
+  top:50%;
+  height: 40%;
+  width:40%;
+}
+.cajadeabajo{
+  position:absolute;
+  background: #FFFFFF;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+width: 100%;
+height: 70px;
+bottom:0;
+flex-direction: row;
+}
+.usuario{
+  
+position: absolute;
+width: 2.5%;
+height: 5%;
+bottom:75%;
+left:38.2%;
+
+
+
+}
+.llave{
+  position: absolute;
+width: 3%;
+height: 3%;
+bottom:68%;
+left:38.2%;
+
+}
+.tituloprincipal{
+  
+position: absolute;
+width: 254px;
+height: 37px;
+left: 8px;
+top: 45px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 72px;
+line-height: 84px;
+align-items: center;
+top:0;
+left:0;
+color: #000000;
+}
+.elotrotitulo{
+  
+position: absolute;
+width: 147px;
+height: 56px;
+left: 1285px;
+top: 34px;
+right:0;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+align-items: center;
+top:2.5%;
+right:0%;
+color: #000000;
+}
+.comoquieresunirte{
+  
+position: absolute;
+width: 455px;
+height: 56px;
+left: 492px;
+top: 352px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+align-items: center;
+top:15%;
+color: #000000;
+}
+.PELUQUERO{
+
+
+  width: 630px;
+height: 300px;
+
+top:25%;
+}
+.peluqueria{
+  
+position: absolute;
+width: 173px;
+height: 42px;
+
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #000000;
+margin-left: 70%;
+margin-top: 1%;
+}
+.COMIDA{
+  align-items: center;
+position: absolute;
+
+  width: 630px;
+height: 300px;
+padding-left: 3%;
+top:20%;
+}
+.RESTAURANTE{
+  position: absolute;
+width: 173px;
+height: 42px;
+
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #000000;
+margin-left: 3%;
+margin-top: 3.05%;
+}
+.personaje{
+
+width: 3.5%;
+padding-top: 0.7%;
+margin-left: 27.7%;
+
+
+
+}
+.MALETA{
+  width: 3.5%;
+  padding-top: 0.7%;
+  margin-left: 7%;
+}
+.lupa{
+  width: 3.5%;
+  padding-top: 0.7%;
+  margin-left: 7%;
+}
+.calendario{
+  width: 3.5%;
+  padding-top: 0.7%;
+  margin-left: 7%;
+}
+.pregunta{
+  width: 3.5%;
+  padding-top: 0.7%;
+  margin-left: 7%;
+}
+.contenedor-negocios{
+  display: grid;   
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 1rem;
+
+}
