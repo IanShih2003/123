@@ -18,7 +18,7 @@ import turnos from "./turnos";
 
 import { register } from "./serviceWorker";
 import prueba from "./prueba";
-
+// import turnosform from "./turnosform"
 function App() {
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState('');
@@ -148,6 +148,7 @@ function App() {
           <Route path="/registrarse" exact component={registrarse} />
           <Route path="/" exact component={inicio} />
           <Route path="/turnos" exact component={turnos} />
+          {/* <Route path="/turnosform" exact component={turnosform} /> */}
         </Switch>
       </div>
     </Router>
