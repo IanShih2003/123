@@ -19,29 +19,23 @@ import turnos from "./turnos";
 import { register } from "./serviceWorker";
 import prueba from "./prueba";
 // import turnosform from "./turnosform"
-function App() {
+
+const Login = () => {
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState('');
   const [correo, setEmail] = useState("");
   const [password, setPass] = useState('');
   const [dni, setDNI] = useState("");
 
-  function handleNombre(e) {
-    setNombre(e.target.value)
-    console.log(nombre)   
+  const handlerFunc = (func) => {
+    return ({ target }) => func(target.value);
   }
-  function handleApellido(e) {
-    setApellido(e.target.value)
-  }
-  function handleCorreo(e) {
-    setEmail(e.target.value)
-  }
-  function handlePass(e) {
-    setPass(e.target.value)
-  }
-  function handleDNI(e) {
-    setDNI(e.target.value)
-  }  
+
+  const handleNombre = handlerFunc(setNombre);
+  const handleApellido = handlerFunc(setApellido);
+  const handleDNI = handlerFunc(setDNI);
+  const handleCorreo = handlerFunc(setEmail);
+  const handlePass = handlerFunc(setPass);
 
   const Registrousuario = async () => {
     console.log("hola");
@@ -68,19 +62,19 @@ function App() {
     },
   };
 
-  const Login = () => (
+  return (
     <div className="contenedorgigante">
       <div className="header"></div>
       <div className="cajitafeliz2">
         <div className="formcontainer">
           <div className="App"></div>
-  
+
           <div style={{ textAlign: "center" }}>
             <div id="formulario">
               <input
                 id="nombre"
                 placeholder="Nombre"
-                onChange={e => handleNombre(e)}
+                onChange={handleNombre}
                 className="queso"
                 type="text"
                 value ={nombre}
@@ -90,18 +84,18 @@ function App() {
               <input
                 id="apellido"
                 placeholder="apellido"
-                onChange={e => handleApellido(e)}
+                onChange={handleApellido}
                 className="queso"
                 type="text"
                 value ={apellido}
               />
             </div>
-  
+
             <div>
               <input
                 id="correo"
                 placeholder="Email"
-                onChange={e => handleCorreo(e)}
+                onChange={handleCorreo}
                 className="queso"
                 type="text"
                 value = {correo}
@@ -111,7 +105,7 @@ function App() {
               <input
                 id="contra"
                 placeholder="Contraseña"
-                onChange={e => handlePass(e)}
+                onChange={handlePass}
                 className="queso"
                 type="text"
                 value = {password}
@@ -121,7 +115,7 @@ function App() {
               <input
                 id="dni"
                 placeholder="DNI"
-                onChange={e => handleDNI(e)}
+                onChange={handleDNI}
                 className="queso"
                 type="text"
                 value = {dni}
@@ -137,8 +131,10 @@ function App() {
         </div>
       </div>
     </div>
-  );
+)};
 
+
+function App() {
   return (
     <Router>
       <div className="app">
@@ -154,7 +150,5 @@ function App() {
     </Router>
   );
 }
-
-
 
 export default App;
