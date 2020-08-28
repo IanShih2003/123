@@ -14,23 +14,35 @@ import CALENDARIO from "./CALENDARIO.png";
 import pregunta from "./pregunta.png";
 import axios from "axios";
 
-function principal() {
 
-  const configuracion = {
-    url: "http://localhost:3000/auth",
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    data: { Correo: "pepegallo@gmail.com", password: "12345678" },
-  };
-  const Login = async () => {
-    const respuesta = await axios(configuracion);
-    console.log(respuesta.data);
-    if (respuesta.data.status === "Employeed Saved") {
-    }
-  };
 
+function Principal() {
+  
+    const [correo, setEmail] = useState("");
+    const [password, setPass] = useState("");
+  
+    const handlerFunc = (func) => {
+      return ({ target }) => func(target.value);
+    };
+  
+    const handleCorreo = handlerFunc(setEmail);
+    const handlePass = handlerFunc(setPass);
+  
+    const configuracion = {
+      url: "http://localhost:3000/auth",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: { Correo: correo, password: password},
+    };
+    const Login = async () => {
+      const respuesta = await axios(configuracion);
+      console.log(configuracion.data);
+      if (respuesta.data.status === "Employeed Saved") {
+      }
+    };
+  
   return (
     <div className="contenedorgigante">
       <div className="header"></div>
@@ -39,7 +51,12 @@ function principal() {
           <Form className="App">
             <img src={usuario} className="usuario"></img>
 
-            <Input type="Email" className="queso" placeholder="Email"></Input>
+            <Input
+              type="Email"
+              className="queso"
+              placeholder="Email"
+              onChange={handleCorreo}
+            ></Input>
 
             <FormGroup>
               <img src={llave} className="llave"></img>
@@ -47,6 +64,7 @@ function principal() {
                 type="Password"
                 className="queso"
                 placeholder="Contraseña"
+                onChange={handlePass}
               />
             </FormGroup>
             <div className="xdrow">
@@ -57,14 +75,14 @@ function principal() {
               </a>
             </div>
             <Link to={"/turnos"}>
-            <Button className="btnlogin" onClick={Login}>
-              Ingresar
-            </Button>
-            </Link>            
+              <Button className="btnlogin" onClick={Login}>
+                Ingresar
+              </Button>
+            </Link>
           </Form>
         </div>
       </div>
     </div>
   );
 }
-export default principal;
+export default Principal;

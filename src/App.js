@@ -8,7 +8,7 @@ import {
   Switch,
   useHistory,
 } from "react-router-dom";
-import principal from "./principal";
+import Principal from "./principal";
 import { Link } from "react-router-dom";
 import registrarse from "./registrarse";
 import index from "./index";
@@ -140,7 +140,7 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/principal" exact component={principal} />
+          <Route path="/principal" exact component={Principal} />
           <Route path="/Login" exact component={Login} />
           <Route path="/registrarse" exact component={registrarse} />
           <Route path="/" exact component={inicio} />
