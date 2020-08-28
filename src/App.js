@@ -107,7 +107,7 @@ const Login = () => {
                 placeholder="Contraseña"
                 onChange={handlePass}
                 className="queso"
-                type="text"
+                type="password"
                 value = {password}
               />
             </div>
@@ -122,10 +122,11 @@ const Login = () => {
               />
             </div>
             <div className="xdrow2">
-              <button className="btnlogin" onClick={Registrousuario}>
-                {" "}
-                Registrarse
-              </button>
+            <Link to={"/principal"}>
+            <button className="btnlogin" onClick={Registrousuario}>
+              Ingresar
+            </button>
+            </Link>  
             </div>
           </div>
         </div>
